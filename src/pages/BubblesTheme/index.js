@@ -121,7 +121,7 @@ const BubblesTheme = (props) => {
     <Section>
       {props.showText && <Div className="div-title">
         Bubbles :)
-        <button onClick={(event) => divDown()}>Tirar esse texto do meio pra eu ver melhor</button>
+        {/*<button onClick={(event) => divDown()}>Tirar esse texto do meio pra eu ver melhor</button>*/}
         <Link to="/">
           <button>Home</button>
         </Link>  

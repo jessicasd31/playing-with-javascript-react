@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import BubblesTheme from '../BubblesTheme'
+import Funnel from '../Funnel'
 
 const Links = styled.section`
   display: flex;
@@ -26,13 +27,13 @@ const Links = styled.section`
       border-right: 2px solid black;
     }
 
-    h4 {
+    h3 {
       transition: transform .5s;
       position: absolute;
     }
 
     &:hover {
-      h4 {
+      h3 {
         transform: scale(1.2);
       }
     }
@@ -53,13 +54,16 @@ const Home = () => {
         <div>
           <BubblesTheme />
         </div>
-        <h4>Bubbles Theme</h4>
+        <h3>Bubbles Theme</h3>
       </Link>
-      <Link to="/flowers-theme">
-        <h4>Flowers Theme</h4>
+      <Link to="/funnel-theme">
+        <div>
+          <Funnel />
+        </div>
+        <h3>Funnel Theme</h3>
       </Link>
       <Link to="/">
-        <h4>Surprise Theme</h4>
+        <h3>Surprise Theme</h3>
       </Link>
     </Links>
   )
